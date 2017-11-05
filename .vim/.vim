@@ -1,0 +1,1 @@
+/home/zimon/git-vim/.vim
