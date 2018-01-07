@@ -46,6 +46,9 @@ Plug 'leafgarland/typescript-vim'
 " Close xml tags
 Plug 'docunext/closetag.vim'
 
+" Shows git diffs for a file
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
 
