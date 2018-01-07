@@ -13,32 +13,38 @@ Plug 'tpope/vim-fugitive'
 " nerdtree : A tree explorer plugin for Vim (https://github.com/scrooloose/nerdtree)
 Plug 'scrooloose/nerdtree'
 
-" vim-colors-solarized
+" vim-colors-solarized (https://github.com/altercation/vim-colors-solarized)
 Plug 'altercation/vim-colors-solarized'
 
-" vim-colorschemes
+" vim-colorschemes (https://github.com/flazz/vim-colorschemes)
 Plug 'flazz/vim-colorschemes'
 
-" syntastic : Syntax checking hacks for vim
+" syntastic : Syntax checking hacks for vim (https://github.com/vim-syntastic/syntastic)
 Plug 'scrooloose/syntastic'
 
-" airline
+" airline (https://github.com/vim-airline/vim-airline)
 Plug 'bling/vim-airline'
 
-" airline-themes : Airline themes (better with powerline)
+" airline-themes : Airline themes (better with powerline) (https://github.com/vim-airline/vim-airline-themes)
 Plug 'vim-airline/vim-airline-themes'
 
 " tagbar : Display tags in a window (https://github.com/majutsushi/tagbar)
 Plug 'majutsushi/tagbar'
 
-" NERD commenter
+" NERD commenter (https://github.com/scrooloose/nerdcommenter)
 Plug 'scrooloose/nerdcommenter'
 
-" youcompleteme : autocompletion
+" youcompleteme : autocompletion (https://github.com/valloric/youcompleteme)
 Plug 'valloric/youcompleteme'
 
 " delimitmate : Auto-completion for quotes, parens, brackets, ..
 Plug 'raimondi/delimitmate'
+
+" typescript-vim
+Plug 'leafgarland/typescript-vim'
+
+" Close xml tags
+Plug 'docunext/closetag.vim'
 
 call plug#end()
 
@@ -123,3 +129,7 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+" Issue with delimitmate and xml tags
+let g:closetag_filenames = "*.xml,*.html,*.xhtml,*.phtml,*.php"
+au FileType xml,html,phtml,php,xhtml,js let b:delimitMate_matchpairs = "(:),[:],{:}"
