@@ -49,6 +49,16 @@ Plug 'docunext/closetag.vim'
 " Shows git diffs for a file
 Plug 'airblade/vim-gitgutter'
 
+" Toggle the paste option (no issue with indentation anymore)
+Plug 'roxma/vim-paste-easy'
+
+" Show thin vertical lines for indent
+" Plug 'yggdroot/indentline'
+
+" To install next :
+" https://vimawesome.com/plugin/ctrlp-vim-red
+" https://vimawesome.com/plugin/tabular
+
 call plug#end()
 
 
@@ -76,14 +86,14 @@ set hlsearch
 " Search as characters are entered
 set incsearch
 
-" Tab of 4 spaces and other things about indentation
+" Tab of 2 spaces and other things about indentation
 set nowrap
-set tabstop=4       " The width of a TAB is set to 4.
+set tabstop=2       " The width of a TAB is set to 2.
                     " Still it is a \t. It is just that
                     " Vim will interpret it to be having
                     " a width of 4.
-set shiftwidth=4    " Indents will have a width of 4
-set softtabstop=4   " Sets the number of columns for a TAB
+set shiftwidth=2    " Indents will have a width of 2
+set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set autoindent      " Auto-indent new lines
 set smartindent
@@ -93,6 +103,9 @@ set number          " show line numbers in vim
 
 " Map of the files
 map <C-n> :NERDTreeToggle<CR>
+
+set splitright " Open new splits to the right
+set splitbelow " Open new splits to the bottom
 
 " Speed up with history
 set hidden
@@ -110,6 +123,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
+" Following line is the height for the syntastic error window
+let g:syntastic_loc_list_height=2
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
