@@ -29,6 +29,8 @@ cd ~/.vim/plugged/youcompleteme
 ./install.py --all
 ```
 
+For Syntastic, you will need to install Exhuberant Ctags, you can find informations [here](http://ctags.sourceforge.net/)
+
 For powerline, you can install it this way :
 
 ```sh
