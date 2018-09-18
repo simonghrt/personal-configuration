@@ -3,6 +3,9 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+" We need to specitfy another PATH
+" Is it really necessary this ?????
+let $PATH='$HOME/.cargo/bin:/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin'
 
 " List of plugins made thanks to : https://vimawesome.com/
 " Make sure you use single quotes
@@ -52,6 +55,15 @@ Plug 'airblade/vim-gitgutter'
 " Toggle the paste option (no issue with indentation anymore)
 Plug 'roxma/vim-paste-easy'
 
+" The ultimate snippet solution for Vim
+Plug 'sirver/ultisnips' " track the engine
+
+" vim snipmate default snippets
+Plug 'honza/vim-snippets' " Snippets separated from the engine
+
+" add this line to your .vimrc file
+Plug 'mattn/emmet-vim'
+
 " Show thin vertical lines for indent
 " Plug 'yggdroot/indentline'
 
@@ -97,6 +109,9 @@ set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set autoindent      " Auto-indent new lines
 set smartindent
+
+" Text width
+set textwidth=90   " Maximum width for a line
 
 " Line numbers
 set number          " show line numbers in vim
@@ -151,3 +166,12 @@ let g:NERDTrimTrailingWhitespace = 1
 " Issue with delimitmate and xml tags
 let g:closetag_filenames = "*.xml,*.html,*.xhtml,*.phtml,*.php"
 au FileType xml,html,phtml,php,xhtml,js let b:delimitMate_matchpairs = "(:),[:],{:}"
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Try to map somewhere a big down/up
+" nnoremap <D-Up> 7k
+" nnoremap <D-Down> 7j
