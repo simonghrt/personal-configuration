@@ -4,7 +4,7 @@ My personal configuration (zsh, vim, alias, ..)
 
 ## Terminals
 
-#### Ubuntu
+#### Ubuntu :penguin:
 
 On Ubuntu, I use Terminator, here how to install it :
 
