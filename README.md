@@ -126,3 +126,19 @@ For powerline, you can install it this way :
 pip install powerline-status
 ```
 
+## Atom
+
+#### List of plugins used
+
+* minimap
+* minimap-git-diff
+* minimap-highlight-selected
+* atom-beautify
+* autoclose-html
+* autocomplete-python
+* file-icons
+* highlight-line
+* highligh-selected
+* tree-view-git-status
+* linter
+* several other linter plugins
