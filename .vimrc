@@ -73,6 +73,7 @@ Plug 'mattn/emmet-vim'
 
 call plug#end()
 
+set t_Co=256
 
 " Vim configurations
 
