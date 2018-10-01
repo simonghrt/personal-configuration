@@ -175,3 +175,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Try to map somewhere a big down/up
 " nnoremap <D-Up> 7k
 " nnoremap <D-Down> 7j
+
+" Remove SQL completion
+let g:omni_sql_no_default_maps = 1
