@@ -69,6 +69,21 @@ I use agnoster for my zsh theme (need powerline)
 ZSH_THEME="agnoster"
 ```
 
+#### Alias
+
+Here are some pretty useful aliases
+
+``` bash
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+
+# Git
+# gst for git status (default)
+# ga for git add
+```
+
 ## Powerline
 
 #### Ubuntu
