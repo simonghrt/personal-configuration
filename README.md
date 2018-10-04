@@ -157,3 +157,8 @@ pip install powerline-status
 * tree-view-git-status
 * linter
 * several other linter plugins
+
+## Languages
+
+Use of NVM for easier npm version managing
+Use of Pyenv for easier python version managing
