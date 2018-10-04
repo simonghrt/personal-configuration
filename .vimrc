@@ -112,7 +112,7 @@ set autoindent      " Auto-indent new lines
 set smartindent
 
 " Text width
-set textwidth=90   " Maximum width for a line
+" set textwidth=90   " Maximum width for a line
 
 " Line numbers
 set number          " show line numbers in vim
