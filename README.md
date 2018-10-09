@@ -14,7 +14,7 @@ sudo apt-get update
 sudo apt-get install terminator
 ```
 
-##### Change theme colors to solarize
+##### Ubuntu :penguin: - Change theme colors to solarize
 
 ```dconf``` is required if you don't already have it.
 ```bash
@@ -39,22 +39,22 @@ To activate dark solarize theme in Terminator just right click on the terminal,
 > Preferences>Profiles>Colors>Foreground and Background>Built-in schemes: Solarized dark
 > Preferences>Profiles>Colors>Palette>Built-in schemes: Solarized
 
-#### Mac
+#### Mac :apple:
 
-On Mac, I use iterm
+On Mac, I use iterm that I install going on the official website with download link
 
 ## Zsh + oh my zsh
 
 I use it as my default shell
 
-#### Ubuntu
+#### Ubuntu :penguin:
 
 ``` bash
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### Mac
+#### Mac :apple:
 
 ``` bash
 brew install zsh
@@ -86,7 +86,7 @@ alias ..5="cd ../../../../.."
 
 ## Powerline
 
-#### Ubuntu
+#### Ubuntu :penguin:
 
 ``` bash
 # Install powerline fonts
@@ -104,9 +104,15 @@ fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ```
 
-## Vim
+#### Mac :apple:
 
-#### vim-plug (Unix)
+I follow the tutorial there : [https://medium.com/@elviocavalcante/5-steps-to-improve-your-terminal-appearance-on-mac-osx-f58b20058c84](https://medium.com/@elviocavalcante/5-steps-to-improve-your-terminal-appearance-on-mac-osx-f58b20058c84)
+
+Solarized is normally already installed in the last version of iterm
+
+## Vim (Unix and Mac)
+
+#### vim-plug
 
 I use vim-plug for the vim pugins manager that you can install on Unix this way (for Vim): 
 
@@ -135,13 +141,7 @@ cd ~/.vim/plugged/youcompleteme
 
 For Syntastic, you will need to install Exhuberant Ctags, you can find informations [here](http://ctags.sourceforge.net/)
 
-For powerline, you can install it this way :
-
-```sh
-pip install powerline-status
-```
-
-## Atom
+## Atom (I moved to Visual Studio Code)
 
 #### List of plugins used
 
