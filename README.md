@@ -43,6 +43,10 @@ To activate dark solarize theme in Terminator just right click on the terminal,
 
 On Mac, I use iterm that I install going on the official website with download link
 
+I choose in Profiles/General to reuse the previous sessions directory
+
+I also unckeck in Appearance the "show per pane title bar"
+
 ## Zsh + oh my zsh
 
 I use it as my default shell
@@ -141,6 +145,22 @@ cd ~/.vim/plugged/youcompleteme
 
 For Syntastic, you will need to install Exhuberant Ctags, you can find informations [here](http://ctags.sourceforge.net/)
 
+## Visual Studio Code
+
+* Auto Close Tag
+* Bracket Pair Colorizer
+* Debugger for Chrome
+* Docker
+* ESLint
+* GitLens
+* Jupyter
+* markdownlint
+* Material theme (Material theme high contrast)
+* Python
+* TSLint
+* VS Code Jupyter Notebook
+
+<!--
 ## Atom (I moved to Visual Studio Code)
 
 #### List of plugins used
@@ -157,8 +177,27 @@ For Syntastic, you will need to install Exhuberant Ctags, you can find informati
 * tree-view-git-status
 * linter
 * several other linter plugins
+-->
 
 ## Languages
 
-Use of NVM for easier npm version managing
-Use of Pyenv for easier python version managing
+### Nvm (Ubuntu and Mac)
+
+Installation with this simple command
+
+``` bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+### Miniconda
+
+#### Mac :apple: 
+
+Follow those instructions : [https://conda.io/docs/user-guide/install/macos.html](https://conda.io/docs/user-guide/install/macos.html)
+
+## Git configuration
+
+I often have multiple ssh keys for different github accounts (personal and work), I follow those links :
+[https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e](https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e)
+[https://medium.freecodecamp.org/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca](https://medium.freecodecamp.org/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca)
+
