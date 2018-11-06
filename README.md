@@ -195,6 +195,12 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 
 Follow those instructions : [https://conda.io/docs/user-guide/install/macos.html](https://conda.io/docs/user-guide/install/macos.html)
 
+#### Linux :penguin:
+
+Follow those instructions : [https://conda.io/docs/user-guide/install/linux.html](https://conda.io/docs/user-guide/install/linux.html)
+
+For both, you need to add to the .zshrc the path of conda
+
 ## Git configuration
 
 I often have multiple ssh keys for different github accounts (personal and work), I follow those links :
