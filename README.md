@@ -73,9 +73,21 @@ I use agnoster for my zsh theme (need powerline)
 ZSH_THEME="agnoster"
 ```
 
+Add this in your zsh file in order to have a shorter name prompt :
+
+```
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
+```
+
 #### Alias
 
-Several alias are included in Oh my zsh, I haven't added personal ones yet
+``` sh
+alias cl="clear"
+```
 
 ## Powerline
 
@@ -223,3 +235,9 @@ I install several things on Jupyter :
 * Jupyter extensions
 * Jupyter theme
 * Qgrid
+
+## Shell applications
+
+* how-2 (with NPM)
+* htop
+* caniuse-cmd (with NPM)
